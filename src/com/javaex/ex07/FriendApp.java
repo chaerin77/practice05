@@ -27,6 +27,7 @@ public class FriendApp {
         
         System.out.print("이름:");
         friendArray[i].setName(sc.nextLine());
+        //J.setName(sc.nextLine()); ,,,->friendArray[i].setName
         
         System.out.print("핸드폰:");
         friendArray[i].setHp(sc.nextLine());
