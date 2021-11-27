@@ -11,6 +11,7 @@ public class AccountApp {
         int money;
         
         Account account = new Account("312-89562-123456");
+        account.showInfo();
         
         while(run){
             System.out.println("");
@@ -33,7 +34,7 @@ public class AccountApp {
                     System.out.print("출금액>");
                     money= sc.nextInt();
                     account.withdraw(money);
-                    break;
+                    break; 
                     
                 case 3:
                     System.out.print("잔고액>");
