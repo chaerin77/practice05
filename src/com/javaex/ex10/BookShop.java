@@ -6,6 +6,7 @@ public class BookShop {
 
     public static void main(String[] args) {
         Book[] books = new Book[10];
+        
 
         books[0] = new Book(1, "트와일라잇", "스테파니메이어");
         books[1] = new Book(2, "뉴문", "스테파니메이어");
@@ -28,6 +29,7 @@ public class BookShop {
 
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
+        books[num-1].rent();
         
         
 
@@ -41,5 +43,9 @@ public class BookShop {
     private static void displayBookInfo(Book[] books) {
         
     	//코드작성
+    	for(int i=0; i<books.length; i++) {
+    		books[i].print();
+    		
+    	}
     }
 }
